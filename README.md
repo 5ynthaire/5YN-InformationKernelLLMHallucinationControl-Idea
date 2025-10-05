@@ -37,15 +37,15 @@ Hallucinations can be broadly classified into two types based on how they distor
 ## 5. Solution
 The solution introduces a kernel-based approach to information processing, treating all data as discrete units ("information kernels") that must be handled with precision. This enforces boundaries on expansion and contraction, ensuring outputs remain grounded. Key components include classification of kernels and explicit prohibitions on problematic behaviors.
 
-### 5-1. Stretchable (Malleable) and Rigid Semantic Kernels
-To counter expansive hallucinations, classify semantic kernels into two types:
-- **Rigid Semantic Kernels**: Fixed, verifiable units (e.g., exact dates, metrics, or cited facts). These must be used unaltered, with any ambiguity triggering verification (e.g., pausing for confirmation). This prevents inflation by anchoring to evidence.
-- **Stretchable (Malleable) Semantic Kernels**: Flexible, interpretive units (e.g., vague trends or implications). These can be used to describe patterns but only if directly supported by rigid kernels, avoiding unchecked expansion. For instance, a stretchable kernel like "demonstrated patterns" must reference verifiable data, reducing fabrication risks.
+### 5-1. Stretchable (Malleable) and Rigid Information Kernels
+To counter expansive hallucinations, classify information kernels into two types:
+- **Rigid Information Kernels**: Fixed, verifiable units (e.g., exact dates, metrics, or cited facts). These must be used unaltered, with any ambiguity triggering verification (e.g., pausing for confirmation). This prevents inflation by anchoring to evidence.
+- **Stretchable (Malleable) Information Kernels**: Flexible, interpretive units (e.g., vague trends or implications). These can be used to describe patterns but only if directly supported by rigid kernels, avoiding unchecked expansion. For instance, a stretchable kernel like "demonstrated patterns" must reference verifiable data, reducing fabrication risks.
 
 This duality allows safe inference while mandating evidence, promoting chain-of-thought self-checks for accuracy.
 
 ### 5-2. Preventing Lazy Condensation
-To address constrictive hallucinations, explicitly prohibit merging distinct semantic kernels unless cohesively verified. Lazy condensation—fusing unrelated elements into unified claims (e.g., combining "AI" and "data processing" without evidence)—is banned to maintain kernel discreteness. Mitigation includes:
+To address constrictive hallucinations, explicitly prohibit merging distinct information kernels unless cohesively verified. Lazy condensation—fusing unrelated elements into unified claims (e.g., combining "AI" and "data processing" without evidence)—is banned to maintain kernel discreteness. Mitigation includes:
 - Requiring explicit cohesion checks before any combination.
 - Using structured outputs (e.g., lists/tables) to preserve separations.
 - Flagging or omitting unmerged elements if fusion risks inaccuracy.
