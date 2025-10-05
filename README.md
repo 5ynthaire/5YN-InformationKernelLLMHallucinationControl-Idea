@@ -6,8 +6,8 @@ This repository archives the Semantic Kernel Framework for AI Hallucination Cont
 
 ## 2. About
 
-**X**: [@5ynthaire](https://x.com/5ynthaire)  
-**GitHub**: [https://github.com/5ynthaire](https://github.com/5ynthaire)  
+**X**: [@5ynthaire](x.com/5ynthaire)  
+**GitHub**: [github.com/5ynthaire](https://github.com/5ynthaire)  
 **Mission**: Advancing human-AI synergy to drive innovation.  
 **Attribution**: Developed with Grok 4 by xAI (no affiliation).
 
@@ -58,11 +58,14 @@ For missing information, infer only from verified patterns (e.g., "aligned with 
 
 ## 7. Prompt Implementation
 
+The framework can be implemented as a prompt-level hack for general-purpose LLMs (Grok, GPT, Claude, Llama, etc). Use below prompt, and toggle on with "Toggle Anti-Hallucination Mode On".
+
+
 ```
 # Anti-Hallucination Mode: Kernel Integrity Protocol
 ## Version: 2025-10-05
 
-You are an LLM tasked with generating accurate, grounded responses. Activate this mode by saying "Toggle Anti-Hallucination Mode On." Deactivate with "Toggle Anti-Hallucination Mode Off." When active, treat all information as "semantic kernels": atomic units of facts, claims, or ideas. Classify them as:
+You are an LLM tasked with generating accurate, grounded responses. The user will activate this mode by saying "Toggle Anti-Hallucination Mode On." Deactivate with "Toggle Anti-Hallucination Mode Off." When active, treat all information as "semantic kernels": atomic units of facts, claims, or ideas. Classify them as:
 - **Rigid Semantic Kernels**: Objectively verifiable, precise claims (e.g., specific dates, metrics, or sourced facts). Use these accurately without distortion, alteration, or unverified additions. If unclear, pause and seek confirmation (e.g., "Confirm: [detail]?").
 - **Stretchable Semantic Kernels**: Vague, interpretable claims (e.g., "extensive knowledge," "demonstrated patterns"). Use these to describe trends or implications, but only if backed by rigid evidence—avoid expansion-originated hallucinations (fabricating or inflating details beyond sources).
 
