@@ -1,11 +1,11 @@
 # Information Kernel Framework for AI Hallucination Control
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17274202.svg)](https://doi.org/10.5281/zenodo.17274202)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17274203.svg)](https://doi.org/10.5281/zenodo.17274203)
 
 A novel prompt-level framework for constraining LLM distortions by treating information as discrete "information kernels" with rigid and stretchable classifications, enforcing evidence-based reasoning and prohibiting lazy condensation.
 
 ## Quick Start
-- [Preprint](https://doi.org/10.5281/zenodo.17274202)
+- [Preprint](https://doi.org/10.5281/zenodo.17274203)
 - [Implementation Prompt](prompts/information-kernel-protocol.md)
 - [License](LICENSE)
 
