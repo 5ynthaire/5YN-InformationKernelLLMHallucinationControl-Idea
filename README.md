@@ -52,6 +52,7 @@ To address constrictive hallucinations, explicitly prohibit merging distinct inf
 
 <br />
 <br />
+### 5-3. Diagram of Framework
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/RigidMalleableExpansionAndLazyCondensation_dark.png">
