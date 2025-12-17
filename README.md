@@ -50,8 +50,6 @@ To address constrictive hallucinations, explicitly prohibit merging distinct inf
 - Using structured outputs (e.g., lists/tables) to preserve separations.
 - Flagging or omitting unmerged elements if fusion risks inaccuracy.
 
-<br />
-<br />
 ### 5-3. Diagram of Framework
 <p align="center">
   <picture>
