@@ -50,6 +50,14 @@ To address constrictive hallucinations, explicitly prohibit merging distinct inf
 - Using structured outputs (e.g., lists/tables) to preserve separations.
 - Flagging or omitting unmerged elements if fusion risks inaccuracy.
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="images/RigidMalleableExpansionAndLazyCondensation_dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="images/RigidMalleableExpansionAndLazyCondensation_light.png">
+    <img src="images/RigidMalleableExpansionAndLazyCondensation_mono_light.png" alt="Information Kernel Diagram" />
+  </picture>
+</p>
+
 ## 6. Implementation
 To operationalize the abstract kernel and anti-condensation model, the following guidelines enforce the solution during response generation, ensuring conceptual principles translate to practical, hallucination-resistant outputs.
 
